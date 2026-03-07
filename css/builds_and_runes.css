@@ -15,7 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     min-height: 100vh;
-    overscroll-behavior: none;
+    overscroll-behavior: unset;
 }
 
 .container{
@@ -27,7 +27,7 @@ body {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-bottom: 30px;
-    box-shadow: 3px 3px 8px #000000;
+    box-shadow: 3px 3px 8px #000;
 
 }
 
@@ -141,9 +141,6 @@ body {
 
 @media (max-width: 576px){
 
-    body{
-        min-height: 100vh;
-    }
     .section-title{
         font-size: 28px;
     }
