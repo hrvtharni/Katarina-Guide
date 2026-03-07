@@ -9,14 +9,17 @@ body {
     background: linear-gradient(223deg, rgb(0, 0, 0) 0%, rgb(85, 27, 27) 0%, rgb(8, 0, 0) 69%);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .container{
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
     background: rgba(0, 0, 0, 0.466);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    min-height: 1100px;
     margin-bottom: 30px;
     box-shadow: 3px 3px 8px #000000;
 
@@ -110,7 +113,6 @@ body {
 /*ICONS*/
 .icon-row img {
     width: 60px;
-    margin-right: 12px;
     border-radius: 12px;
     transition: 0.2s ease;
 }
@@ -129,4 +131,20 @@ body {
 
 .tooltip.bs-tooltip-top .tooltip-arrow::before {
     border-top-color: #2b0000;
+}
+
+@media (max-width: 576px){
+
+    .section-title{
+        font-size: 28px;
+    }
+    .build-card{
+        padding: 18px;
+    }
+    .icon-row img{
+        width: 48px;
+    }
+    .build-subtext{
+        font-size: 12px;
+    }
 }
