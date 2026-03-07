@@ -141,6 +141,9 @@ body {
 
 @media (max-width: 576px){
 
+    body{
+        min-height: 100vh;
+    }
     .section-title{
         font-size: 28px;
     }
